@@ -55,10 +55,14 @@ const useFallbackLocale = (l) => {
 /**
  * t
  *
+ * @example
+ * t('helloWorld');
+ *
  * @param {*} key - key
  * @param {*} args - args
+ * @param {*} defaultMessage - defaultMessage
  */
-const t = (key, args = {}) => {
+const t = (key, args = {}, defaultMessage) => {
   const {
     locale,
     fallbackLocale,
@@ -72,7 +76,7 @@ const t = (key, args = {}) => {
   }
 
   if (value === undefined) {
-    value = `Missing ${locale}.${key}`;
+    value = defaultMessage || `Missing ${locale}.${key}`;
   }
 
   if (args) {

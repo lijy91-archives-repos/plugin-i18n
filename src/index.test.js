@@ -47,4 +47,7 @@ it('I18n t correctly', () => {
 
   const missingMessage = t('missing');
   expect(missingMessage).toEqual('Missing zh-Hans.missing');
+
+  const defaultMessage = t('defaultMessage', null, 'This is defaultMessage');
+  expect(defaultMessage).toEqual('This is defaultMessage');
 });
