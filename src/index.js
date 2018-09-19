@@ -83,7 +83,9 @@ const t = (key, args = {}, defaultMessage) => {
     const keys = Object.keys(args);
     keys.forEach((argKey) => {
       const argValue = args[argKey];
-      value = value.replace(`__${argKey}__`, argValue);
+
+      const regexp = new RegExp(`__${argKey}__`, 'g');
+      value = value.replace(regexp, argValue);
     });
   }
   return value;
