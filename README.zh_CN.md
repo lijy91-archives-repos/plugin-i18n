@@ -1,33 +1,38 @@
 # @blankapp/plugin-i18n
 
-English | [简体中文](./README.zh_CN.md)
+[English](./README.zh_CN.md) | 简体中文
 
 ## Introduction
 
-A cross-platform I18n plugin for your React Native app.
+适用于 React Native 应用程序的跨平台国际化（I18n）插件。
 
-### Features
+## 特性
 
 - ...
 
-## Quick Start
+## 快速开始
 
-### Installation
+### 安装
 
-Install `@blankapp/plugin-i18n` and link in your project:
+安装 `@blankapp/plugin-i18n` 到你的项目
 
 ```bash
 $ yarn add @blankapp/plugin-i18n
 ```
 
-Or
+或
 
 ```
 $ yarn add git+https://github.com/blankapp/plugin-i18n
 ```
 
-Now, simply copy the following to your index.js file of React Native project:
+### 链接
 
+Coming soom
+
+## 基本用法
+
+现在，只需将以下内容复制到React Native项目的index.js文件中：
 ```js
 import I18n, { t } from '@blankapp/plugin-i18n';
 
@@ -50,7 +55,7 @@ const message1 = t('hello'); // 你好，世界
 const message2 = t('welcome', { name: '张三' }); // 欢迎光临，张三先生
 ```
 
-## License
+## 许可证
 
 ```text
 MIT License
