@@ -113,8 +113,8 @@ const I18n = {
   register,
   registerLanguage,
   useLocale,
-  useFallbackLocale,
   useDeviceLocale,
+  useFallbackLocale,
   t,
 };
 
