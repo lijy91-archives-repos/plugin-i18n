@@ -1,3 +1,5 @@
+import RNI18n from './RNI18n';
+
 const get = (object, path) => {
   if (typeof object === 'object' && path) {
     return path
@@ -43,6 +45,21 @@ const registerLanguage = (locale, values) => {
 const useLocale = (l) => {
   i18nOptions.locale = l;
 };
+
+/**
+ * Use Device Locale
+ *
+ */
+const useDeviceLocale = () => {
+  if (RNI18n) {
+    const { deviceLocale } = RNI18n;
+    useLocale(deviceLocale);
+  } else {
+    // eslint-disable-next-line
+    console.warn('If you need to use `deviceLocale`, Please link `@blankapp/plugin-i18n` to the project first. \nhttps://blankapp.org/plugins/i18n.html');
+  }
+};
+
 /**
  * Use Fallback Locale
  *
@@ -97,6 +114,7 @@ const I18n = {
   registerLanguage,
   useLocale,
   useFallbackLocale,
+  useDeviceLocale,
   t,
 };
 

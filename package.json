@@ -10,8 +10,6 @@
     "test": "jest"
   },
   "pre-commit": [
-    "test",
-    "build"
   ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -22,5 +20,8 @@
     "eslint-plugin-import": "^2.13.0",
     "jest": "^23.4.2",
     "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "react-native": "^0.57.2"
   }
 }
