@@ -108,6 +108,21 @@ const t = (key, args = {}, defaultMessage) => {
   return value;
 };
 
+/**
+ * select
+ *
+ * @example
+ * const languageName = I18n.select({
+ *   'en-US': 'English',
+ *   'zh-Hans': '简体中文',
+ * });
+ * @param {*} obj - any
+ */
+const select = (obj) => {
+  const { locale } = i18nOptions;
+  return (locale in obj ? obj[locale] : obj.default);
+};
+
 const I18n = {
   i18nOptions,
   register,
@@ -116,6 +131,7 @@ const I18n = {
   useDeviceLocale,
   useFallbackLocale,
   t,
+  select,
 };
 
 export {

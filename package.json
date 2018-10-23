@@ -23,5 +23,15 @@
   },
   "dependencies": {
     "react-native": "^0.57.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/Example/"
+    ]
   }
 }

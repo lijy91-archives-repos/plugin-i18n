@@ -51,3 +51,23 @@ it('I18n t correctly', () => {
   const defaultMessage = t('defaultMessage', null, 'This is defaultMessage');
   expect(defaultMessage).toEqual('This is defaultMessage');
 });
+
+it('I18n select correctly', () => {
+  I18n.useLocale('ja');
+  const data = {
+    'en-US': 'English',
+    'zh-Hans': '简体中文',
+    'zh-Hant': '繁體中文',
+  };
+
+  expect(I18n.select(data)).toEqual(undefined);
+
+  I18n.useLocale('en-US');
+  expect(I18n.select(data)).toEqual('English');
+
+  I18n.useLocale('zh-Hans');
+  expect(I18n.select(data)).toEqual('简体中文');
+
+  I18n.useLocale('zh-Hant');
+  expect(I18n.select(data)).toEqual('繁體中文');
+});
