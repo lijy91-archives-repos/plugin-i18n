@@ -1,4 +1,4 @@
-import compatibleIOSLanguageTags from './compatibleIOSLanguageTags.json';
+import compatibleIOSLanguageTags from '../../compatibleIOSLanguageTags.json';
 
 const convert = locale => compatibleIOSLanguageTags[locale] || locale;
 
