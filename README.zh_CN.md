@@ -60,7 +60,7 @@ const message2 = t('welcome', { name: '张三' }); // 欢迎光临，张三先�
 ```text
 MIT License
 
-Copyright (c) 2017 JianyingLi <lijy91@foxmail.com>
+Copyright (c) 2018 JianyingLi <lijy91@foxmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

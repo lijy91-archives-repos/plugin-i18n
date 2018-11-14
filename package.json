@@ -1,37 +1,38 @@
 {
   "name": "@blankapp/plugin-i18n",
   "version": "1.0.0",
-  "main": "lib/index.js",
-  "repository": "https://github.com/blankapp/plugin-i18n.git",
+  "description": "A cross-platform I18n plugin for your React Native app.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:blankapp/plugin-i18n.git"
+  },
+  "keywords": [
+  ],
   "author": "JianyingLi <lijy91@foxmail.com>",
   "license": "MIT",
-  "scripts": {
-    "build": "node_modules/.bin/babel src --out-dir lib",
-    "test": "jest"
-  },
   "pre-commit": [
   ],
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^23.4.2",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "jest": "^23.4.2",
-    "pre-commit": "^1.2.2"
+  "scripts": {
+    "build": "node_modules/.bin/babel src --out-dir lib --presets react-native",
+    "lint": "node_modules/.bin/eslint src/**",
+    "test": "node_modules/.bin/jest"
   },
-  "dependencies": {
-    "react-native": "^0.57.2"
+  "dependencies": {},
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "23.6.0",
+    "pre-commit": "^1.2.2",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-test-renderer": "16.3.1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "jest": {
-    "testEnvironment": "node",
-    "setupFiles": [
-      "<rootDir>/jest-setup.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/Example/"
-    ]
+    "preset": "react-native"
   }
 }
