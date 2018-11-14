@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 import I18n, { t } from '@blankapp/plugin-i18n';
-import RNI18n from '@blankapp/plugin-i18n/lib/RNI18n';
+import RNI18n from '@blankapp/plugin-i18n/src/RNI18n';
 
 I18n.useDeviceLocale();
 
