@@ -32,7 +32,8 @@ Coming soom
 
 ## 基本用法
 
-现在，只需将以下内容复制到React Native项目的index.js文件中：
+现在，只需将以下内容复制到 React Native 项目的 `index.js` 文件中：
+
 ```js
 import I18n, { t } from '@blankapp/plugin-i18n';
 

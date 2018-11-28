@@ -1,5 +1,4 @@
-
-package org.blankapp.i18n;
+package org.blankapp.plugins.i18n;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -7,18 +6,18 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RNI18nModule extends ReactContextBaseJavaModule {
+public class RNPluginI18nModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
 
-    public RNI18nModule(ReactApplicationContext reactContext) {
+    public RNPluginI18nModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "RNI18n";
+        return "RNPluginI18n";
     }
 
     @Override

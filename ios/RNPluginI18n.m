@@ -1,7 +1,6 @@
+#import "RNPluginI18n.h"
 
-#import "RNI18n.h"
-
-@implementation RNI18n
+@implementation RNPluginI18n
 
 + (BOOL)requiresMainQueueSetup
 {

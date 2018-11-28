@@ -8,6 +8,8 @@
     "url": "git@github.com:blankapp/plugin-i18n.git"
   },
   "keywords": [
+    "react-native",
+    "i18n"
   ],
   "author": "JianyingLi <lijy91@foxmail.com>",
   "license": "MIT",

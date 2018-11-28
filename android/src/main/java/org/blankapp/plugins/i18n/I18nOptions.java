@@ -1,4 +1,4 @@
-package org.blankapp.i18n;
+package org.blankapp.plugins.i18n;
 
 import java.util.HashMap;
 

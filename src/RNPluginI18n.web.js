@@ -2,8 +2,8 @@ import toCompatibleIOSLanguageTag from './toCompatibleIOSLanguageTag';
 
 const deviceLocale = toCompatibleIOSLanguageTag(navigator.language);
 
-const RNI18n = {
+const RNPluginI18n = {
   deviceLocale,
 };
 
-export default RNI18n;
+export default RNPluginI18n;

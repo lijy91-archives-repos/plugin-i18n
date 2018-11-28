@@ -3,7 +3,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:RNI18n.xcodeproj">
+      location = "group:RNPluginI18n.xcodeproj">
    </FileRef>
 </Workspace>
   

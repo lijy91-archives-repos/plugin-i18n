@@ -5,7 +5,6 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNI18n : NSObject <RCTBridgeModule>
+@interface RNPluginI18n : NSObject <RCTBridgeModule>
 
 @end
-  

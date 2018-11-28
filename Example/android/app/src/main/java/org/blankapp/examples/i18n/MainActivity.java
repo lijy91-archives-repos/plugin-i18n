@@ -1,4 +1,4 @@
-package com.example;
+package org.blankapp.examples.i18n;
 
 import com.facebook.react.ReactActivity;
 

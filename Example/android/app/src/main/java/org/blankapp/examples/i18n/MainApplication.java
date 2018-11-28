@@ -1,4 +1,4 @@
-package com.example;
+package org.blankapp.examples.i18n;
 
 import android.app.Application;
 
@@ -8,8 +8,8 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
-import org.blankapp.i18n.I18n;
-import org.blankapp.i18n.RNI18nPackage;
+import org.blankapp.plugins.i18n.I18n;
+import org.blankapp.plugins.i18n.RNPluginI18nPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +26,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-                    new RNI18nPackage()
+                    new RNPluginI18nPackage()
             );
         }
 

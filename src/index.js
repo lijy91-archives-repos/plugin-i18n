@@ -1,4 +1,4 @@
-import RNI18n from './RNI18n';
+import RNPluginI18n from './RNPluginI18n';
 
 const get = (object, path) => {
   if (typeof object === 'object' && path) {
@@ -51,8 +51,8 @@ const useLocale = (l) => {
  *
  */
 const useDeviceLocale = () => {
-  if (RNI18n) {
-    const { deviceLocale } = RNI18n;
+  if (RNPluginI18n) {
+    const { deviceLocale } = RNPluginI18n;
     useLocale(deviceLocale);
   } else {
     // eslint-disable-next-line
